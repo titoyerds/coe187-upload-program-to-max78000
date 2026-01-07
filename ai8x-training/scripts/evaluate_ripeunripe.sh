@@ -1,0 +1,2 @@
+#!/bin/sh
+python train.py --model ai85cdnet --dataset ripe_vs_unripe --confusion --evaluate --exp-load-weights-from ../ai8x-synthesis/trained/best-quantized.pth.tar -8 --device MAX78000 --workers 0 --compiler-mode none --save-sample 0
